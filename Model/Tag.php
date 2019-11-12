@@ -145,8 +145,8 @@ class Tag extends BaseModel
                 'fire_limit' => $fireLimit,
                 'fire_delay' => $fireDelay,
                 'priority' => $priority,
-                'start_date' => empty($startDate) ? null : $startDate,
-                'end_date' => empty($endDate) ? null : $endDate,
+                'start_date' => $startDate,
+                'end_date' => $endDate
             );
             $this->updateTagColumns($idSite, $idContainerVersion, $idTag, $columns);
         }
